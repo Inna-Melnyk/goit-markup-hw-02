@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background-primary: #ffffff;
+  --color-bg-hero-footer: #2e2f42;
+  --color-bg-secondary: #f4f4fd;
+  --color-logo-main: #2e2f42;
+  --color-logo-secondary: #f4f4fd;
+  --color-accent: #4d5ae5;
+  --color-accent-active: #404bbf;
+  --color-portfolio-button: #f4f4fd;
+  --color-portfolio-button-border: #e7e9fc;
+  --color-text-main: #434455;
+  --color-text-invert: #fff;
+  --color-headings: #2e2f42;
+  --color-hero-title: #fff;
+  --color-text-footer: #e7e9fc;
+
+  /* --primary-brand: #4D5AE5; IRIS
+--dark:#2E2F42; NAVY BLUE
+--success:#31D0AA;*GREEN
+--text: #434455; SLATE
+--subtle-text: #8E8F99; LIGHT SLATE
+--accent: #E7E9FC; cornflower
+--light: #F4F4FD; CLOUD */
+}
+
+body {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-main);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+/* LOGO */
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  color: var(--color-logo-main);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+}
+.logo-web {
+  color: var(--color-accent);
+}
+/* NAV */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--color-logo-main);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-text-main);
+}
+.nav-link:active {
+  color: var(--color-accent);
+}
+
+.contact-link {
+  color: var(--color-text-main);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--color-accent);
+}
+
+/*HERO*/
+.hero {
+  background-color: var(--color-bg-hero-footer);
+}
+.hero-title {
+  color: var(--color-hero-title);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.hero-button {
+  font-family: "Roboto", sans-serif;
+  width: 170px;
+  height: 51px;
+  left: 635px;
+  top: 432px;
+  margin: auto;
+
+  background-color: var(--color-accent);
+  color: var(--color-text-invert);
+  border-color: var(--color-accent);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.04em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.hero-button:active {
+  background-color: var(--color-accent-active);
+}
+
+/*Section-2*/
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+
+  color: var(--color-headings);
+}
+.feature-title,
+.employee-name,
+.project-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-headings);
+}
+.feature-text,
+.work-position,
+.project-type {
+  line-height: 1.5;
+}
+/*OUR TEAM*/
+
+.section-team {
+  background-color: var(--color-bg-secondary);
+}
+.eployee-card {
+  background-color: var(--color-background-primary);
+}
+
+/*FOOTER*/
+.footer {
+  background-color: var(--color-bg-hero-footer);
+}
+.footer-logo {
+  color: var(--color-logo-secondary);
+  line-height: 1.16;
+}
+.footer-text {
+  color: var(--color-text-footer);
+  line-height: 1.5;
+}
+
+/*PORTFOLIO*/
+
+.project-filter {
+  display: flex;
+}
+.project-filter-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  border-radius: 4px;
+  border: 1px solid var(--color-portfolio-button-border);
+  background-color: var(--color-portfolio-button);
+  color: var(--color-accent);
+
+  padding: 12px 24px;
+  margin-top: 96px;
+  margin-left:24px;
+  margin-bottom: 72px;
+
+  cursor: pointer;
+}
+.project-filter-button:hover,
+.project-filter-button:focus {
+  background-color: var(--color-accent);
+  color: var(--color-text-invert);
+  border: 1px solid var(--color-accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.project-name {
+  text-decoration: none;
+}
+.project-type {
+  color: var(--color-text-main);
+}
